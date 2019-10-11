@@ -1,19 +1,44 @@
-var movie = [{
+var movieJson = [{
+	"title": "movie title",
+	"dscrptn" : "description",
+	"picurl" : "pic",
+	"countedLikes" : 0
+},
+{
 	"title": "AD ASTRA",
-   "description": "Zu den Sternen reist Roy McBride (Brad Pitt) ins Weltall um nach seinem bei einer Weltraummission verschwundenen Vater zu suchen."
-  },{
+	"dscrptn" : "Zu den Sternen reist Roy McBride (Brad Pitt) ins Weltall um nach seinem bei einer Weltraummission verschwundenen Vater zu suchen.",
+	"picurl" : "./img./movie0.jpg",
+	"countedLikes" : 23
+},
+{
 	"title": "ANGEL HAS FALLEN",
-   "description": "Im eisenharten Alleingang muss er eine Verschwörung aufdecken."
-  },{
+	"dscrptn" : "Im eisenharten Alleingang muss er eine Verschwörung aufdecken.",
+	"picurl" : "./img./movie1.jpg",
+	"countedLikes" : 6
+},
+{
 	"title": "ANGRY BIRDS 2",
-   "description": "Der Streit zwischen den flugunfähigen Vögeln und den hinterlistigen grünen Schweinen geht in die nächste Runde."
-  },{
+	"dscrptn" : "Der Streit zwischen den flugunfähigen Vögeln und den hinterlistigen grünen Schweinen geht in die nächste Runde.",
+	"picurl" : "./img./movie2.jpg",
+	"countedLikes" : 18
+},
+{
 	"title": "DEM HORIZONT SO NAH",
-   "description": "Tim Trachte erzählt eine wahre und zutiefst bewegende Liebesgeschichte über Mut, Vertrauen und die Kraft loszulassen."
-  },{
+	"dscrptn" : "Tim Trachte erzählt eine wahre und zutiefst bewegende Liebesgeschichte über Mut, Vertrauen und die Kraft loszulassen.",
+	"picurl" : "./img./movie3.jpg",
+	"countedLikes" : 4
+},
+{
 	"title": "DER KÖNIG DER LÖWEN",
-   "description": "Jon Favreau inszenierte eines der bekanntesten und beliebtesten Disney-Abenteuer spektakulär als bildgewaltiges Live-Action-Kino mit atemberaubenden visuellen Effekten."
-  },{
+	"dscrptn" : "Jon Favreau inszenierte eines der bekanntesten und beliebtesten Disney-Abenteuer spektakulär als bildgewaltiges Live-Action-Kino mit atemberaubenden visuellen Effekten",
+	"picurl" : "./img./movie4.jpg",
+	"countedLikes" : 15
+},
+{
 	"title": "DEUTSCHSTUNDE",
-   "description": "Deutschstunde bietet zeitlosen Kinostoff: zwei Freunde werden erbitterte Feinde – und zwischen ihnen steht ein elfjähriger Junge, der von beiden geliebt werden will."
-  }];
+	"dscrptn" : "Deutschstunde bietet zeitlosen Kinostoff: zwei Freunde werden erbitterte Feinde – und zwischen ihnen steht ein elfjähriger Junge, der von beiden geliebt werden will.",
+	"picurl" : "./img./movie5.jpg",
+	"countedLikes" : 1
+}
+
+]

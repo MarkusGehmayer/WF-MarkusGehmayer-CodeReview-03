@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   font-family: sans-serif, Arial;
+  color: white;
 }
 
 /* Scrollbar - it's a try */
@@ -13,33 +14,37 @@
   border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb {
-  background: grey; 
+  background: #4da43c; 
   border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #f0f0f0; 
 }
+/* Scrollbar ENDE */
 
+/* Basic */
 html { 
   box-sizing: border-box;
   width: 100%;
   margin: 0;
   background-color: #222222;
+  cursor: url(http://cur.cursors-4u.net/cursors/cur-6/cur578.cur), auto;
 }
 
 body {
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
 }
 
 a, ul, li {
     text-decoration: none;
+    list-style-type: none;
 }
 
 /* HEADER */
 header {
     width:100%; 
-    padding: 3vw;
+    padding: 3.45vw;
     background-color: #000000;
     color: white;
     font-size: 2.3em;
@@ -56,14 +61,13 @@ header {
   	border: 2px solid black;
   	box-shadow: 6px 6px 6px grey inset;
   	background: gray url("https://www.pngsee.com/uploadpng/full/10-104804_movie-film-strip-film-png-transparent-png.png") repeat 50% 0;
- 	background-size: 40%;
+ 	background-size: 44%;
   	-webkit-animation: slide 300s linear infinite;
 }
 @-webkit-keyframes slide {
     from { background-position: 200px 0; }
     to { background-position: 2200px 0px; }
 }
-
 /*HEADER ENDE */
 
 /* NAVIGATION */
@@ -86,22 +90,29 @@ nav ul li:hover {
 nav ul {
     display: flex;
     justify-content: flex-start;
-    list-style: none;
     padding-left: 20px;
+    list-style-type: none;
 }
 
 nav ul a {
     padding:2px;
     text-decoration: none;
+    text-shadow:  
+     1px  1px 1px black,
+     1px -1px 1px black,
+    -1px  1px 1px black,
+    -1px -1px 1px black;
 }
 
 nav ul a li {
-    font-size: 1.5vw;
+    font-size: 1.7vw;
     color: white;
     text-decoration: none;
 }
+/* NAVIGATION ENDE */
 
-#main {
+/* CONTAINERS */
+main{
 	background-color: #171E25;
 	color: white;
 	border-radius: 2vw 2vw 0vw 0vw;
@@ -111,24 +122,94 @@ nav ul a li {
 	text-decoration: none;
 }
 
-/* GALLERY */
-#gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(15%, 1fr));
-  grid-gap: 2px;
-  font-size: 0.8em;
-  }
-
-#gallery img {
-  border: 1px solid grey;
-  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+.cineTitle{
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: center;
+	font-size: 1.5vw;
+	text-shadow:  
+     1px  1px 1px black,
+     1px -1px 1px black,
+    -1px  1px 1px black,
+    -1px -1px 1px black;
 }
 
-h3 {
+#cineMenu{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.cineBox{
+	background-color: black;
+	width: 30em;
+	margin: 1em;
+	padding: 1vh;
+	border-radius: 2vw 2vw 2vw 2vw;
+	box-shadow: 1px 1px 1px grey inset;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	grid-template-rows: 0.5fr 1fr 0.5fr;
+	grid-template-areas: "cineIMG cineHeader" "cineIMG cineDscr" "cineIMG magIchContainer";
+}
+
+.cineBox p{
+	margin: 0;
+}
+
+.cineIMG{
+	grid-area: cineIMG;
+	width: 70%;
+	overflow: hidden;
+	border-radius: 1.5vw 1.5vw 1.5vw 1.5vw;
+}
+
+.cineHeader{
+	grid-area: cineHeader;
+	padding-left: 2vw;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+.cineDscr{
+	padding-left: 2vw;
+	grid-area: cineDscr;
+	font-size: 0.8em;
+}
+
+.magIchContainer{
+	grid-area: magIchContainer;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.liKes{
+	color: #4da43c;
 	text-align: center;
+	padding-top: 0.6em;
+	padding-right: 2vw;
+	font-size: 1.5em;
+	cursor: url(http://cur.cursors-4u.net/mechanics/mec-5/mec409.ani), url(http://cur.cursors-4u.net/mechanics/mec-5/mec409.png), auto;
 }
 
-/* FOOTER */
+.neueLikes{	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 1.7em;
+	height: 1.7em;
+	background-color: #4da43c;
+	color: white;
+	border-radius: 50%;
+	font-size: 1.5em; 
+	box-shadow: 1.5px 1px 1px grey;
+	text-shadow:  
+     1px  1px 1px black,
+     1px -1px 1px grey,
+    -1px  1px 1px grey,
+    -1px -1px 1px grey;
+}
+
 footer {
     text-align: center;
     width: 100%;
@@ -142,5 +223,5 @@ footer {
 
 #copyright {
    font-size: 1.0em;
-   padding: 1.5vw;
+   padding: 6vh;
  }
