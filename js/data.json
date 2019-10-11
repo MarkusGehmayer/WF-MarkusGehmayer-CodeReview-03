@@ -1,0 +1,19 @@
+var movie = [{
+	"title": "AD ASTRA",
+   "description": "Zu den Sternen reist Roy McBride (Brad Pitt) ins Weltall um nach seinem bei einer Weltraummission verschwundenen Vater zu suchen."
+  },{
+	"title": "ANGEL HAS FALLEN",
+   "description": "Im eisenharten Alleingang muss er eine Verschwörung aufdecken."
+  },{
+	"title": "ANGRY BIRDS 2",
+   "description": "Der Streit zwischen den flugunfähigen Vögeln und den hinterlistigen grünen Schweinen geht in die nächste Runde."
+  },{
+	"title": "DEM HORIZONT SO NAH",
+   "description": "Tim Trachte erzählt eine wahre und zutiefst bewegende Liebesgeschichte über Mut, Vertrauen und die Kraft loszulassen."
+  },{
+	"title": "DER KÖNIG DER LÖWEN",
+   "description": "Jon Favreau inszenierte eines der bekanntesten und beliebtesten Disney-Abenteuer spektakulär als bildgewaltiges Live-Action-Kino mit atemberaubenden visuellen Effekten."
+  },{
+	"title": "DEUTSCHSTUNDE",
+   "description": "Deutschstunde bietet zeitlosen Kinostoff: zwei Freunde werden erbitterte Feinde – und zwischen ihnen steht ein elfjähriger Junge, der von beiden geliebt werden will."
+  }];

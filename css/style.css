@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif, Arial;
+}
+
+/* Scrollbar - it's a try */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #434343; 
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: grey; 
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #f0f0f0; 
+}
+
+html { 
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  background-color: #222222;
+}
+
+body {
+    width: 70%;
+    margin: 0 auto;
+}
+
+a, ul, li {
+    text-decoration: none;
+}
+
+/* HEADER */
+header {
+    width:100%; 
+    padding: 3vw;
+    background-color: #000000;
+    color: white;
+    font-size: 2.3em;
+    font-weight: bold;
+    text-shadow:  
+     1px  1px 1px black,
+     1px -1px 1px black,
+    -1px  1px 1px black,
+    -1px -1px 1px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+  	border-radius: 2vw 2vw 0vw 0vw;
+  	border: 2px solid black;
+  	box-shadow: 6px 6px 6px grey inset;
+  	background: gray url("https://www.pngsee.com/uploadpng/full/10-104804_movie-film-strip-film-png-transparent-png.png") repeat 50% 0;
+ 	background-size: 40%;
+  	-webkit-animation: slide 300s linear infinite;
+}
+@-webkit-keyframes slide {
+    from { background-position: 200px 0; }
+    to { background-position: 2200px 0px; }
+}
+
+/*HEADER ENDE */
+
+/* NAVIGATION */
+nav {
+    display: flex;
+    justify-content: flex-start;
+    background-color: #434343;
+    width: 100%;
+    border-radius: 0vw 0vw 2vw 2vw;
+    border: 2px solid black;
+    margin-bottom: 2vh;
+	box-shadow: 6px 0px 6px grey inset;
+}
+
+nav ul li:hover {
+	color: lightgrey;
+	font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    padding-left: 20px;
+}
+
+nav ul a {
+    padding:2px;
+    text-decoration: none;
+}
+
+nav ul a li {
+    font-size: 1.5vw;
+    color: white;
+    text-decoration: none;
+}
+
+#main {
+	background-color: #171E25;
+	color: white;
+	border-radius: 2vw 2vw 0vw 0vw;
+	padding: 1vh;
+	border: 2px solid black;
+	box-shadow: 6px 0px 6px grey inset;
+	text-decoration: none;
+}
+
+/* GALLERY */
+#gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15%, 1fr));
+  grid-gap: 2px;
+  font-size: 0.8em;
+  }
+
+#gallery img {
+  border: 1px solid grey;
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+}
+
+h3 {
+	text-align: center;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    width: 100%;
+    height:15vh;
+    background-color: #000000;
+    color: #ffffff;  
+    border-radius: 0vw 0vw 2vw 2vw;
+    border: 2px solid black;
+    box-shadow: 6px 0px 6px grey inset;
+}
+
+#copyright {
+   font-size: 1.0em;
+   padding: 1.5vw;
+ }
